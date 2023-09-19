@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #7289DA; /* Discord's primary color */
+    --background-color: #36393f; /* Dark background color */
+    --text-color: #ffffff; /* Light text color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Enhanced "Join" Button Style */
+.join-button {
+    background-color: #546e91; /* A slightly darker blue */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.join-button:hover {
+    background-color: #405971; /* Darken the color on hover */
+}
+
+/* Main Content Section Styles */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Dark Box Styles */
+.dark-box {
+    background-color: #222; /* Dark background for the dark boxes */
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Rules Section Styles */
+#rules {
+    background-color: #222; /* Dark background for the rules section */
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.rule {
+    margin-bottom: 20px;
+}
+
+.rule h3 {
+    font-size: 1.5rem;
+}
+
+.rule ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.rule p {
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
